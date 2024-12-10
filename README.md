@@ -1,15 +1,33 @@
 # Grade_Predicting_AI
 Beginners Task for GDSC inductions
-I'm using the following information to predict a student's grades
-i. Absences (numeric: from 0 to 93)
 
-ii.Weekly Study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)
+We are using the student performance dataset suggested in the problem statement
+We shall be predicting G3
 
-iii free time (numeric: from 1 - very low to 5 - very high) or
-second period grade (numeric: from 0 to 20)
+Order of feature importance as calculated in feature_importance.ipynb
 
-iv Failures (numeric: n if 1<=n<3, else 4)
+       Feature  Importance
+12          G2    0.317957
+10    absences    0.093695
+11          G1    0.085076
+5     freetime    0.080451
+0          age    0.060107
+2    studytime    0.058146
+9       health    0.055575
+4       famrel    0.051255
+8         Walc    0.048176
+6        goout    0.044748
+1   traveltime    0.031638
+13       sex_n    0.028319
+3     failures    0.022597
+7         Dalc    0.022262
 
-v health (numeric: from 1 - very bad to 5 - very good)
+Let's use the top 5 of these to predict the student's final grade. i.e
+i G2 - second period grade (numeric: from 0 to 20)
+ii absences - number of school absences (numeric: from 0 to 93)
+iii G1 - first period grade (numeric: from 0 to 20)
+iv freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+v age - student's age (numeric: from 15 to 22)
 
-And we will be predicting G3
+
+From the 649 rows in the dataset
