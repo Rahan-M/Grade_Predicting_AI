@@ -4,23 +4,24 @@ Beginners Task for GDSC inductions
 We are using the student performance dataset suggested in the problem statement
 We shall be predicting G3
 
+We are using a decision tree regressor model
 Order of feature importance as calculated in feature_importance.ipynb
 
        Feature  Importance
-12          G2    0.317957
-10    absences    0.093695
-11          G1    0.085076
-5     freetime    0.080451
-0          age    0.060107
-2    studytime    0.058146
-9       health    0.055575
-4       famrel    0.051255
-8         Walc    0.048176
-6        goout    0.044748
-1   traveltime    0.031638
-13       sex_n    0.028319
-3     failures    0.022597
-7         Dalc    0.022262
+12          G2    0.836842
+10    absences    0.029313
+6        goout    0.029130
+5     freetime    0.022505
+13       sex_n    0.017483
+8         Walc    0.014459
+11          G1    0.012548
+0          age    0.008446
+4       famrel    0.008310
+7         Dalc    0.006362
+9       health    0.005463
+3     failures    0.004473
+1   traveltime    0.002363
+2    studytime    0.002302
 
 Let's use the top 5 of these to predict the student's final grade. i.e
 i G2 - second period grade (numeric: from 0 to 20)
