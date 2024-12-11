@@ -1,14 +1,24 @@
 # Grade_Predicting_AI
 Beginners Task for GDSC inductions
 
+Libraries used - 
+scikit-learn==1.6.0
+pandas==2.2.3
+numpy==2.2.0
+joblib==1.4.2
+streamlit==1.41.0
+
+
+
 We are using the student performance dataset suggested in the problem statement
-We shall be predicting G3
+We shall be predicting G3 (Final Grade)
 
-We are using a decision tree regressor model
+---
 
-Order of feature importance as calculated in feature_importance.ipynb
+We are using a decision tree regressor model.
+Order of feature importance was calculated in feature_importance.ipynb
 The order of importance kept varying to a large degree depending upon the random_state with which we split the dataset into training and 
-testing set, so I used the sum of the importances of 5 different random states
+testing sets, so I used the sum of the importances of 5 different random states to sort the features.
          Feature  Importance
 12            G2    4.138190
 10      absences    0.200482
@@ -43,16 +53,23 @@ testing set, so I used the sum of the importances of 5 different random states
 30    internet_n    0.002335
 29      higher_n    0.000507
 
-
-Using grid search we found the best values for the hyperparameters of the decisiontreeregressor
-min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
-
 Let's use the top 5 of these to predict the student's final grade. i.e
 i G2 - second period grade (numeric: from 0 to 20)
 ii G1 - first period grade (numeric: from 0 to 20)
 iii absences - number of school absences (numeric: from 0 to 93)
 iv famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
 v age - student's age (numeric: from 15 to 22)
+
+---
+
+The best values for the hyperparameters of the Decision Tree Regressor model was found using grid search.
+
+The values were as follows:
+min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
+
+---
+
+The model was then trained on the above features and hyperparameters, and the following are its metrics
 
 Values of RMSE and r^2 (Coefficient of determination) 
 RMSE : 1.1754037010163108 
