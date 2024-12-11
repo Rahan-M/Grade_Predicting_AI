@@ -102,5 +102,5 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 ---
 
 ## ScreenShots
-![image](C:\Users\rahan\OneDrive\Desktop\GDSC_Project\Grade_Predicting_AI\ScreenShots\Feature_Importance.png)
-![image](C:\Users\rahan\OneDrive\Desktop\GDSC_Project\Grade_Predicting_AI\ScreenShots\Final_Metrics.png)
+![image](\ScreenShots\Feature_Importance.png)
+![image](\ScreenShots\Final_Metrics.png)
