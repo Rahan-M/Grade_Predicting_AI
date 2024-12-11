@@ -102,5 +102,5 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 ---
 
 ## ScreenShots
-![image](\ScreenShots\Feature_Importance.png)
-![image](\ScreenShots\Final_Metrics.png)
+![image](/ScreenShots/Feature_Importance.png)
+![image](/ScreenShots/Final_Metrics.png)
