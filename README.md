@@ -1,21 +1,24 @@
 # Grade_Predicting_AI
 Beginners Task for GDSC inductions
-
-Libraries used - 
-scikit-learn==1.6.0
-pandas==2.2.3
-numpy==2.2.0
-joblib==1.4.2
-streamlit==1.41.0
-
-
-
-We are using the student performance dataset suggested in the problem statement
-We shall be predicting G3 (Final Grade)
-
 ---
 
-We are using a decision tree regressor model.
+User Instructions:
+To install the necessary libraries
+pip install -r requirements.txt
+
+to run the webapp type the command 
+streamlit run app.py
+
+I used the student performance dataset suggested in the problem statement.
+
+## Problem Statement
+Build a model to predict a student's final grade based on relevant features with minimal error
+
+The model will predict the final grade of the student using previous grades, attendance, age and interestingly the quality of their family relationships
+---
+## Approach:
+
+I have a decision tree regressor model.
 Order of feature importance was calculated in feature_importance.ipynb
 The order of importance kept varying to a large degree depending upon the random_state with which we split the dataset into training and 
 testing sets, so I used the sum of the importances of 5 different random states to sort the features.
@@ -59,17 +62,15 @@ ii G1 - first period grade (numeric: from 0 to 20)
 iii absences - number of school absences (numeric: from 0 to 93)
 iv famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
 v age - student's age (numeric: from 15 to 22)
-
 ---
 
 The best values for the hyperparameters of the Decision Tree Regressor model was found using grid search.
 
 The values were as follows:
 min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
-
 ---
-
-The model was then trained on the above features and hyperparameters, and the following are its metrics
+## Results
+The model was then trained on the above features and hyperparameters, and the her are its final performance metrics
 
 Values of RMSE and r^2 (Coefficient of determination) 
 RMSE : 1.1754037010163108 
@@ -79,3 +80,15 @@ RMSE : 1.1754037010163108
  rmse_scores:
 [1.47087101 1.34311317 1.74755629 1.87816684 1.79955646]
 Average RMSE = 1.6478527554973303
+---
+
+## Challenges
+
+1) The order of feature importance kept changing depening upon how the dataset was split into training and testing set. i.r for different values of random_state given in the argument of train_test_split the feature importance was different.(G2 and absences however remained in the top 2 always).
+I solved this by sorting the features by the sum of their importances over 5 random splits, which gave me a constant order for the top 5 features, independent of the split.
+
+2) I first tried to use RandomizedSearchCV to find the best parameters for my models. But it did not give a consistent answer again showing big variations depending upon the value for random_state given in the argument.
+I solved this by switching to GridSearchCV which looked over the range in which RandomizedSearchCV was giving me the best arguments most frequently. While it require a considerable amount of computational power, after the computation was complete, I obtained the best hyperparameters for optimizing my model
+
+3) I first used a classification model, but the accuracy was very low. On furthur research I found that a regressor model would be better suited to handle this task.
+
