@@ -121,4 +121,4 @@ Feature Importances Calculation
 ![image](/ScreenShots/feature_importance_bargraph.png)
 
 Hyperparameter Tuning
-![image](/ScreenShots/Hyperparameter_tuning.png.png)
+![image](/ScreenShots/Hyperparameter_tuning.png)
