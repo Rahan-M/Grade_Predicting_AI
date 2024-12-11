@@ -75,6 +75,10 @@ The values were as follows:
 min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
 
 ---
+The webapp was then created using streamlit whose code is present in app.py,  
+the model was saved in a pkl file and then loaded into app.py
+
+---
 ## Results
 The model was then trained on the above features and hyperparameters, and the her are its final performance metrics
 
