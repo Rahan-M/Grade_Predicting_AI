@@ -24,7 +24,7 @@ Order of feature importance was calculated in feature_importance.ipynb
 The order of importance kept varying to a large degree depending upon the random_state with which we split the dataset into training and 
 testing sets, so I used the sum of the importances of 5 different random states to sort the features.
 
-Feature - Importance   (Descending Order)
+Feature - Importance   (Descending Order)  
 G2 -   4.138190  
 absences -  0.200482  
 famrel -   0.090337  
@@ -60,7 +60,7 @@ higher_n -   0.000507
 
 * '_n' at the end of a feature means the orginal values for this feature were not integers or float, so it had to be converted to a number using label encoder*
 
-Let's use the top 5 of these to predict the student's final grade. i.e  
+I used the top 5 of these to predict the student's final grade. i.e  
 i G2 - second period grade (numeric: from 0 to 20)  
 ii G1 - first period grade (numeric: from 0 to 20)  
 iii absences - number of school absences (numeric: from 0 to 93)   
@@ -99,3 +99,4 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 
 3) I first used a classification model, but the accuracy was very low. On furthur research I found that a regressor model would be better suited to handle this task.
 
+![alt text](image-1.png)
