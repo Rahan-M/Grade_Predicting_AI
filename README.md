@@ -45,16 +45,18 @@ testing set, so I used the sum of the importances of 5 different random states
 
 
 Using grid search we found the best values for the hyperparameters of the decisiontreeregressor
-{'min_samples_split': 5, 'min_samples_leaf': 6, 'max_features': None, 'max_depth': 4, 'criterion': 'squared_error'}
+min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
 
 Let's use the top 5 of these to predict the student's final grade. i.e
 i G2 - second period grade (numeric: from 0 to 20)
-ii absences - number of school absences (numeric: from 0 to 93)
-iii G1 - first period grade (numeric: from 0 to 20)
-iv freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+ii G1 - first period grade (numeric: from 0 to 20)
+iii absences - number of school absences (numeric: from 0 to 93)
+iv famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
 v age - student's age (numeric: from 15 to 22)
 
-Values of RMSE and r^2 (Coefficient of determination)
+Values of RMSE and r^2 (Coefficient of determination) 
+RMSE : 1.2319973571188125 
+ r^2 : 0.889379536551393
 
-RMSE : 1.31270982349436 
- r^2 : 0.8523551944849997
+ Cross Validation:
+ Average RMSE = 1.609276289644392
