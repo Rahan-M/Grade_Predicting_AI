@@ -99,4 +99,8 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 
 3) I first used a classification model, but the accuracy was very low. On furthur research I found that a regressor model would be better suited to handle this task.
 
-![alt text](image-1.png)
+---
+
+## ScreenShots
+![image](C:\Users\rahan\OneDrive\Desktop\GDSC_Project\Grade_Predicting_AI\ScreenShots\Feature_Importance.png)
+![image](C:\Users\rahan\OneDrive\Desktop\GDSC_Project\Grade_Predicting_AI\ScreenShots\Final_Metrics.png)
