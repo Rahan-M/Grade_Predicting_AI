@@ -106,7 +106,8 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 ---
 
 ## Web-App
-Streamlit webapp was created so that the user can predict a student's final grades by inputting their details
+Streamlit webapp was created so that the user can predict a student's final grades by inputting their details.
+Simply type the command streamlit run app.py after cloning the repository and installing the needed packages.
 
 ---
 
