@@ -69,25 +69,25 @@ v age - student's age (numeric: from 15 to 22)
 
 ---
 
-The best values for the hyperparameters of the Decision Tree Regressor model was found using grid search.
+The best values for the hyperparameters of the Decision Tree Regressor model was found using grid search. (Code available in project.ipynb)
 
 The values were as follows:
 min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
 
 ---
-The webapp was then created using streamlit whose code is present in app.py,  
+The webapp was then created using streamlit,  (app.py)  
 the model was saved in a pkl file and then loaded into app.py
 
 ---
 ## Results
-The model was then trained on the above features and hyperparameters, and the her are its final performance metrics
+The model was then trained on the above features and hyperparameters, and the here are its final performance metrics  
 
 Values of RMSE and r^2 (Coefficient of determination) 
-RMSE : 1.1754037010163108 
- r^2 : 0.8568457689399083
-
- Cross Validation:
- rmse_scores:
+RMSE : 1.1754037010163108   
+ r^2 : 0.8568457689399083  
+  
+ Cross Validation:  
+ rmse_scores:  
 [1.47087101 1.34311317 1.74755629 1.87816684 1.79955646]
 Average RMSE = 1.6478527554973303
 
