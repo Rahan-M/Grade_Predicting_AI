@@ -102,5 +102,10 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 ---
 
 ## ScreenShots
-![image](/ScreenShots/Feature_Importance.png)
+Final Metrics:
 ![image](/ScreenShots/Final_Metrics.png)
+
+Feature Importances Calculation
+
+![image](/ScreenShots/Featuer_Importances_Code.png)
+![image](/ScreenShots/Feature_Importance.png)
