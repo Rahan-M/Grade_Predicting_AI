@@ -55,8 +55,10 @@ iv famrel - quality of family relationships (numeric: from 1 - very bad to 5 - e
 v age - student's age (numeric: from 15 to 22)
 
 Values of RMSE and r^2 (Coefficient of determination) 
-RMSE : 1.2319973571188125 
- r^2 : 0.889379536551393
+RMSE : 1.1754037010163108 
+ r^2 : 0.8568457689399083
 
  Cross Validation:
- Average RMSE = 1.609276289644392
+ rmse_scores:
+[1.47087101 1.34311317 1.74755629 1.87816684 1.79955646]
+Average RMSE = 1.6478527554973303
