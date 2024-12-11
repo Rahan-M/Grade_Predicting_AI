@@ -23,6 +23,7 @@ I have a decision tree regressor model.
 Order of feature importance was calculated in feature_importance.ipynb
 The order of importance kept varying to a large degree depending upon the random_state with which we split the dataset into training and 
 testing sets, so I used the sum of the importances of 5 different random states to sort the features.
+
          Feature  Importance  
 12            G2    4.138190  
 10      absences    0.200482  
@@ -63,12 +64,14 @@ ii G1 - first period grade (numeric: from 0 to 20)
 iii absences - number of school absences (numeric: from 0 to 93)   
 iv famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)  
 v age - student's age (numeric: from 15 to 22)  
+
 ---
 
 The best values for the hyperparameters of the Decision Tree Regressor model was found using grid search.
 
 The values were as follows:
 min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
+
 ---
 ## Results
 The model was then trained on the above features and hyperparameters, and the her are its final performance metrics
@@ -81,6 +84,7 @@ RMSE : 1.1754037010163108
  rmse_scores:
 [1.47087101 1.34311317 1.74755629 1.87816684 1.79955646]
 Average RMSE = 1.6478527554973303
+
 ---
 
 ## Challenges
