@@ -105,6 +105,11 @@ I solved this by switching to GridSearchCV which looked over the range in which 
 
 ---
 
+## Web-App
+Streamlit webapp was created so that the user can predict a student's final grades by inputting their details
+
+---
+
 ## ScreenShots
 Final Metrics:
 ![image](/ScreenShots/Final_Metrics.png)
@@ -113,3 +118,7 @@ Feature Importances Calculation
 
 ![image](/ScreenShots/Featuer_Importances_Code.png)
 ![image](/ScreenShots/Feature_Importance.png)
+![image](/ScreenShots/feature_importance_bargraph.png)
+
+Hyperparameter Tuning
+![image](/ScreenShots/Hyperparameter_tuning.png.png)
