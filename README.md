@@ -67,12 +67,19 @@ iii absences - number of school absences (numeric: from 0 to 93)
 iv famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)  
 v age - student's age (numeric: from 15 to 22)  
 
+![image](/ScreenShots/Featuer_Importances_Code.png)
+![image](/ScreenShots/Feature_Importance.png)
+![image](/ScreenShots/feature_importance_bargraph.png)
+
+
 ---
 
 The best values for the hyperparameters of the Decision Tree Regressor model was found using grid search. (Code available in project.ipynb)
 
 The values were as follows:
 min_samples_split= 5, min_samples_leaf= 5, max_features= None, max_depth= 4, criterion= 'squared_error'
+
+![image](/ScreenShots/Hyperparameter_tuning.png)
 
 ---
 The webapp was then created using streamlit,  (app.py)  
@@ -90,6 +97,8 @@ RMSE : 1.1754037010163108
  rmse_scores:  
 [1.47087101 1.34311317 1.74755629 1.87816684 1.79955646]
 Average RMSE = 1.6478527554973303
+
+![image](/ScreenShots/metrics.png)
 
 ---
 
@@ -115,7 +124,7 @@ after cloning the repository and installing the needed packages.
 
 ## ScreenShots
 Final Metrics:
-![image](/ScreenShots/Final_Metrics.png)
+![image](/ScreenShots/metrics.png)
 
 Feature Importances Calculation
 
