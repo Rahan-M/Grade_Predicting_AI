@@ -2,12 +2,12 @@
 Beginners Task for GDSC inductions
 ---
 
-User Instructions:
-To install the necessary libraries
-pip install -r requirements.txt
+User Instructions:  
+To install the necessary libraries type  
+"pip install -r requirements.txt" in the terminal  git
 
 to run the webapp type the command 
-streamlit run app.py
+"streamlit run app.py"
 
 I used the student performance dataset suggested in the problem statement.
 
